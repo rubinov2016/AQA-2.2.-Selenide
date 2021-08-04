@@ -20,7 +20,7 @@ public class ClassTest {
         $("[data-test-id=city] input").setValue("Москва");
         $("[data-test-id=date] input").setValue(timeStamp);
         $("[data-test-id=name] input").setValue("Василий Пупкин");
-        $("[data-test-id=phone] input").setValue("+791601234560");
+        $("[data-test-id=phone] input").setValue("+79160123456");
         $("[data-test-id=agreement]").click();
         $$("button").find(exactText("Забронировать")).click();
        $(withText("Встреча успешно забронирована на")).shouldBe(visible, Duration.ofSeconds(20));
